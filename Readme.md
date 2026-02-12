@@ -68,3 +68,11 @@ Array
 
 )
 ```
+
+## Warning / Caution
+
+- This validator does not execute scripts. It only parses the content and checks for paths and commands.
+- Dynamic paths (e.g., `$HOME`, `${VAR}`) are flagged because their runtime value cannot be verified.
+- It may not catch all possible ways to escape the sandbox, especially with highly obfuscated scripts.
+- Always test new scripts in a safe environment before deployment.
+- Designed for sandboxed environments; do not rely solely on this for full system security.
