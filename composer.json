@@ -1,0 +1,14 @@
+{
+    "name": "aliyilmaz/script-sandbox-validator",
+    "description": "A PHP class to validate scripts against a sandbox directory.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ScriptSandboxValidator\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "license": "MIT"
+}
